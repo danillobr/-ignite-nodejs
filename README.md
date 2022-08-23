@@ -44,7 +44,7 @@
 ### Chapter IV
 - [Testes e regras de negócio] <> (05-testes-regras-negocio)
 - [Desafio 1: testes unitários] <> (https://github.com/lfnd0/ignite-desafio1-testes-unitarios)
-- [Desafio 2: testes de integração] <> (https://github.com/lfnd0/ignite-desafio2-testes-integracao)
+- [Desafio 2: testes de integração]: <> (https://github.com/lfnd0/ignite-desafio2-testes-integracao)
 
 ### Chapter V
 - [Trabalhando com Refresh Token e e-mail] <> (06-trabalhando-refresh-token-email/)
