@@ -25,29 +25,29 @@
 ## Índice
 
 ### Chapter I
-- [Fundamentos do Node.js](01-fundamentos-do-nodejs)
-- [Primeiro projeto com Node.js](02-primeiro-projeto-nodejs)
-- [Desafio 1: conceitos do Node.js](https://github.com/lfnd0/ignite-desafio1-conceitos-nodejs)
-- [Desafio 2: trabalhando com middlewares](https://github.com/lfnd0/ignite-desafio2-middlewares)
-- [Desafio 3: corrigindo o código](https://github.com/lfnd0/ignite-desafio3-corrigindo-codigo)
+- [Fundamentos do Node.js] <> (01-fundamentos-do-nodejs)
+- [Primeiro projeto com Node.js] <> (02-primeiro-projeto-nodejs)
+- [Desafio 1: conceitos do Node.js] <> (https://github.com/lfnd0/ignite-desafio1-conceitos-nodejs)
+- [Desafio 2: trabalhando com middlewares] <> (https://github.com/lfnd0/ignite-desafio2-middlewares)
+- [Desafio 3: corrigindo o código] <> (https://github.com/lfnd0/ignite-desafio3-corrigindo-codigo)
 
 ### Chapter II
-- [Iniciando a API](03-iniciando-api)
-- [Desafio 1: introdução ao SOLID](https://github.com/lfnd0/ignite-desafio1-introducao-solid)
-- [Desafio 2: documentando com Swagger](https://github.com/lfnd0/ignite-desafio1-introducao-solid)
+- [Iniciando a API] <> (03-iniciando-api)
+- [Desafio 1: introdução ao SOLID] <> (https://github.com/lfnd0/ignite-desafio1-introducao-solid)
+- [Desafio 2: documentando com Swagger] <> (https://github.com/lfnd0/ignite-desafio1-introducao-solid)
 
 ### Chapter III
-- [Continuando a aplicação](04-continuando-aplicacao)
-- [Desafio 1: database queries](https://github.com/lfnd0/ignite-desafio1-database-queries)
-- [Desafio 2: modelagem do banco de dados](https://bit.ly/3IVhfN0)
+- [Continuando a aplicação] <> (04-continuando-aplicacao)
+- [Desafio 1: database queries] <> (https://github.com/lfnd0/ignite-desafio1-database-queries)
+- [Desafio 2: modelagem do banco de dados] <> (https://bit.ly/3IVhfN0)
 
 ### Chapter IV
-- [Testes e regras de negócio](05-testes-regras-negocio)
-- [Desafio 1: testes unitários](https://github.com/lfnd0/ignite-desafio1-testes-unitarios)
-- [Desafio 2: testes de integração](https://github.com/lfnd0/ignite-desafio2-testes-integracao)
+- [Testes e regras de negócio] <> (05-testes-regras-negocio)
+- [Desafio 1: testes unitários] <> (https://github.com/lfnd0/ignite-desafio1-testes-unitarios)
+- [Desafio 2: testes de integração] <> (https://github.com/lfnd0/ignite-desafio2-testes-integracao)
 
 ### Chapter V
-- [Trabalhando com Refresh Token e e-mail](06-trabalhando-refresh-token-email/)
+- [Trabalhando com Refresh Token e e-mail] <> (06-trabalhando-refresh-token-email/)
 
 
 [comment]: <> (This is a comment, it will not be included)
