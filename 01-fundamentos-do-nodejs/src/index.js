@@ -18,7 +18,7 @@ app.get("/courses", (request, response) => {
     ]);
 });
 
-app.post("/courses", (request, respnse) => {
+app.post("/courses", (request, response) => {
     return response.json([
         "Curso 1",
         "Curso 2",
@@ -27,7 +27,7 @@ app.post("/courses", (request, respnse) => {
     ]);
 });
 
-app.put("courses/:id", (request, response) => {
+app.put("/courses/:id", (request, response) => {
     return response.json([
         "Curso 6",
         "Curso 2",
@@ -36,7 +36,7 @@ app.put("courses/:id", (request, response) => {
     ]);
 })
 
-app.path("courses/:id", (request, response) => {
+app.path("/courses/:id", (request, response) => {
     return response.json([
         "Curso 6",
         "Curso 7",
@@ -45,7 +45,7 @@ app.path("courses/:id", (request, response) => {
     ]);
 })
 
-app.path("courses/:id", (request, response) => {
+app.delete("/courses/:id", (request, response) => {
     return response.json([
         "Curso 6",
         "Curso 7",
