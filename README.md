@@ -26,7 +26,6 @@
 
 ### Chapter I
 - [Fundamentos do Node.js](01-fundamentos-do-nodejs)
-- [Primeiro projeto com Node.js](02-primeiro-projeto-nodejs)
 
 ### Chapter II
 - [Iniciando a API]: <> (03-iniciando-api)
