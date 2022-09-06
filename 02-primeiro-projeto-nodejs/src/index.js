@@ -78,7 +78,7 @@ app.post("/deposit", verifyIfAccountCPF, (request, response) => {
     const statementOperation = {
         description,
         amount,
-        create_at: new Date(),
+        created_at: new Date(),
         type: "credit"
     };
 
@@ -96,11 +96,11 @@ app.post("/withdraw", verifyIfAccountCPF, (request, response) => {
     if (balance < amount) {
         return response.status(400).json({ error: "Insufficient funds!" });
     }
- 
+
 
     const statementOperation = {
         amount,
-        create_at: new Date(),
+        created_at: new Date(),
         type: "debit"
 
     };
@@ -108,6 +108,20 @@ app.post("/withdraw", verifyIfAccountCPF, (request, response) => {
     customer.statement.push(statementOperation);
 
     return response.status(201).send();
+})
+
+app.get("/statement/date", verifyIfAccountCPF, (request, response) => {
+    const { customer } = request;
+    const { date } = request.query
+
+    const dateFormat = new Date(date + " 00:00");
+
+    const statement = customer.statement.filter(
+        (statement) => statement.created_at.toDateString() ===
+            new Date(dateFormat).toDateString()
+    );
+
+    return response.json(statement);
 })
 
 app.listen(3333);
