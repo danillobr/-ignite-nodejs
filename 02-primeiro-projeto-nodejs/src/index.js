@@ -130,7 +130,7 @@ app.put("/account", verifyIfAccountCPF, (request, response) => {
 
     customer.name = name;
 
-    return response.status(201).send();
+    return response.status(200).send();
 });
 
 app.get("/account", verifyIfAccountCPF, (request, response) => {
