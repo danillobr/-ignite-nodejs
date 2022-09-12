@@ -29,7 +29,7 @@
 - [Primeiro projeto com Node.js](02-primeiro-projeto-nodejs)
 - [Desafio 1: conceitos do Node.js](https://github.com/danillobr/ignite-desafio1-conceitos-nodejs)
 - [Desafio 2: middlewares](https://github.com/danillobr/ignite-desafio2-middlewares)
-- [Desafio 3: corrigindo código](hrrps://github.com/danillobr/ignite-desafio3-corrigindo-codigo)
+- [Desafio 3: corrigindo código](https://github.com/danillobr/ignite-desafio3-corrigindo-codigo)
 
 ### Chapter II
 - [Iniciando a API]: <> (03-iniciando-api)
