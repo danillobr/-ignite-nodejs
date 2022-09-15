@@ -32,7 +32,7 @@
 - [Desafio 3: corrigindo código](https://github.com/danillobr/ignite-desafio3-corrigindo-codigo)
 
 ### Chapter II
-- [Iniciando a API]: <> (03-iniciando-api)
+- [Iniciando a API](03-iniciando-api)
 - [Desafio 1: introdução ao SOLID]: <> (https://github.com/lfnd0/ignite-desafio1-introducao-solid)
 - [Desafio 2: documentando com Swagger]: <> (https://github.com/lfnd0/ignite-desafio1-introducao-solid)
 
