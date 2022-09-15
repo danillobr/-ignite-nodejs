@@ -1,4 +1,4 @@
-import { request, response, Router } from "express";
+import { Router } from "express";
 
 import { CategoriesRepository } from "../repositories/CategortiesRepository";
 import { CreateCategoryService } from "../Services/CreateCategoryService";
