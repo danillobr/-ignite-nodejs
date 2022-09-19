@@ -6,7 +6,7 @@ interface ICreateCategoryDTO {
 }
 
 interface ICategoriesRepository {
-    findByName(name: string, description: string): Category;
+    findByName(name: string): Category;
     list(): Category[];
     create({ description, name }: ICreateCategoryDTO): void;
 }
