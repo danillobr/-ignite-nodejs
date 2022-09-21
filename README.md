@@ -34,7 +34,7 @@
 ### Chapter II
 - [Iniciando a API](03-iniciando-api)
 - [Desafio 1: introdução ao SOLID](https://github.com/danillobr/ignite-desafio1-introducao-solid)
-- [Desafio 2: documentando com Swagger]:(https://github.com/danillobr/ignite-desafio1-introducao-solid)
+- [Desafio 2: documentando com Swagger](https://github.com/danillobr/ignite-desafio1-introducao-solid)
 
 ### Chapter III
 - [Continuando a aplicação]: <> (04-continuando-aplicacao)
