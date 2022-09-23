@@ -1,4 +1,4 @@
-version: '3.7'
+version: "3.7"
 
 services:
   database_ignite:
@@ -10,7 +10,7 @@ services:
     environment:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=ignite
-      - POSTGRESS_DB=rentx
+      - POSTGRES_DB=rentx
     volumes:
       - pgdata:/data/postgres
     network_mode: host
