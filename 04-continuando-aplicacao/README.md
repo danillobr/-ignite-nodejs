@@ -45,7 +45,7 @@ Acesse o [link](https://bit.ly/3FDHsh1) para instalação e configuração da fe
    - Listar todas as imagens:
      > docker images -a
    - Remover imagem pelo id:
-     > docker rmi <id-da-imagem>
+     > docker rmi (id-da-imagem)
    - Remover todas as imagens:
      > docker rmi $(docker images -q)
    - Listar todos os containers:
