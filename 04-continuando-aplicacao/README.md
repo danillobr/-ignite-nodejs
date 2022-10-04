@@ -76,8 +76,12 @@ Acesse o [link](https://bit.ly/3FDHsh1) para instalação e configuração da fe
      > docker-compose start | up -d
    - Parar um container (background):
      > docker-compose stop
+   -Parar todos os containers>
+     > docker stop $(docker ps -a -q)
    - Remover um container:
      > docker-compose down
+   - Remover todos os containers:
+     > docker rm $(docker ps -a -q)
 
 ### Conhecendo as formas de usar banco de dados:
 - Driver: [node-postgres](https://node-postgres.com/);
