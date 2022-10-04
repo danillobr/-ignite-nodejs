@@ -76,7 +76,7 @@ Acesse o [link](https://bit.ly/3FDHsh1) para instalação e configuração da fe
      > docker-compose start | up -d
    - Parar um container (background):
      > docker-compose stop
-   -Parar todos os containers>
+   - Parar todos os containers>
      > docker stop $(docker ps -a -q)
    - Remover um container:
      > docker-compose down
