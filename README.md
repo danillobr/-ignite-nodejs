@@ -37,7 +37,7 @@
 - [Desafio 2: documentando com Swagger](https://github.com/danillobr/ignite-desafio1-introducao-solid)
 
 ### Chapter III
-- [Continuando a aplicação]: <> (04-continuando-aplicacao)
+- [Continuando a aplicação](04-continuando-aplicacao)
 - [Desafio 1: database queries]: <> (https://github.com/lfnd0/ignite-desafio1-database-queries)
 - [Desafio 2: modelagem do banco de dados]: <> (https://bit.ly/3IVhfN0)
 
