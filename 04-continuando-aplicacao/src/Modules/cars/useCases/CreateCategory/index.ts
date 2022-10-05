@@ -7,7 +7,7 @@ const categoriesRepository = CategoriesRepository.getInstace();
 const createCategoryUseCase = new CreateCategoryUseCase(categoriesRepository);
 
 const createCategoryController = new CreateCategoryController(
-    createCategoryUseCase
+  createCategoryUseCase
 );
 
 export { createCategoryController };
