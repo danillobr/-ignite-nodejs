@@ -83,7 +83,7 @@ Acesse o [link](https://bit.ly/3FDHsh1) para instalação e configuração da fe
    - Remover todos os containers:
      > docker rm $(docker ps -a -q)
    - Forçar a Recriação de um container (background):
-     > docker -compose up--force-recreate -d
+     > docker-compose up --force-recreate -d
 
 ### Conhecendo as formas de usar banco de dados:
 - Driver: [node-postgres](https://node-postgres.com/);
