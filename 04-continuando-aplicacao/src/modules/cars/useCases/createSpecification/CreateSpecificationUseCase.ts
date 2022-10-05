@@ -1,13 +1,20 @@
+import { inject, injectable } from "tsyringe";
+
 import { ISpecificationsRepository } from "../../repositories/ISpecificationsRepository";
 
 interface IRequest {
   name: string;
   description: string;
 }
+
+@injectable()
 class CreateSpecificationUseCase {
   private specificationsRepository;
 
-  constructor(specificationsRepository: ISpecificationsRepository) {
+  constructor(
+    @inject("SpecificationsRepository")
+    specificationsRepository: ISpecificationsRepository
+  ) {
     this.specificationsRepository = specificationsRepository;
   }
   execute({ name, description }: IRequest): void {
