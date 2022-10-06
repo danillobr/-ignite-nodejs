@@ -12,7 +12,7 @@ export class CreateSpecifications1665009869035 implements MigrationInterface {
             isPrimary: true,
           },
           {
-            name: "nome",
+            name: "name",
             type: "varchar",
           },
           {
