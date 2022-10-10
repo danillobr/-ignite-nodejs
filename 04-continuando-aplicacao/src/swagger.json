@@ -77,6 +77,27 @@
         }
       }
     },
+    "/categories/import":{
+      "post": {
+        "tags": ["Category"],
+        "summary": "Upload a new Categorty",
+        "description":  "Upload a new Categorty",
+        "requestBody":{
+          "content":{
+            "application/octet-stream":{
+              "schema":{
+                "type": "string"
+              }
+            }
+          },
+          "responses":{
+            "201": {
+              "description": "Create"
+            }
+          }
+        } 
+      }
+    },
     "/specifications": {
       "post": {
         "tags": ["Specifications"],
