@@ -10,5 +10,4 @@ interface ICategoriesRepository {
   list(): Promise<Category[]>;
   create({ description, name }: ICreateCategoryDTO): Promise<void>;
 }
-
 export { ICategoriesRepository, ICreateCategoryDTO };
