@@ -38,7 +38,7 @@
 
 ### Chapter III
 - [Continuando a aplicação](04-continuando-aplicacao)
-- [Desafio 1: database queries]: (https://github.com/danillobr/ignite-desafio1-database-queries)
+- [Desafio 1: database queries](https://github.com/danillobr/ignite-desafio1-database-queries)
 - [Desafio 2: modelagem do banco de dados]: <> ()
 
 ### Chapter IV
