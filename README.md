@@ -38,13 +38,13 @@
 
 ### Chapter III
 - [Continuando a aplicação](04-continuando-aplicacao)
-- [Desafio 1: database queries]: <> (https://github.com/lfnd0/ignite-desafio1-database-queries)
-- [Desafio 2: modelagem do banco de dados]: <> (https://bit.ly/3IVhfN0)
+- [Desafio 1: database queries]: (https://github.com/danillobr/ignite-desafio1-database-queries)
+- [Desafio 2: modelagem do banco de dados]: <>()
 
 ### Chapter IV
 - [Testes e regras de negócio]: <> (05-testes-regras-negocio)
-- [Desafio 1: testes unitários]: <> (https://github.com/lfnd0/ignite-desafio1-testes-unitarios)
-- [Desafio 2: testes de integração]: <> (https://github.com/lfnd0/ignite-desafio2-testes-integracao)
+- [Desafio 1: testes unitários]: <> (https://github.com/danillobr/ignite-desafio1-testes-unitarios)
+- [Desafio 2: testes de integração]: <> (https://github.com/danillobr/ignite-desafio2-testes-integracao)
 
 ### Chapter V
 - [Trabalhando com Refresh Token e e-mail]: <> (06-trabalhando-refresh-token-email/)
