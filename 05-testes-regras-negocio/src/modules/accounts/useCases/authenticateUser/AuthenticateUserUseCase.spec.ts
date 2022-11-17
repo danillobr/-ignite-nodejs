@@ -24,7 +24,6 @@ describe("Authenticate User", () => {
       password: "User Test4321",
       name: "User Teste",
     };
-
     await createUserUseUsecase.execute(user);
 
     const result = await authenticateUserUseCase.execute({
@@ -52,6 +51,8 @@ describe("Authenticate User", () => {
         password: "User Test4321",
         name: "User Teste",
       };
+
+      await createUserUseUsecase.execute(user);
 
       await authenticateUserUseCase.execute({
         email: user.email,
