@@ -5,7 +5,7 @@
 <br>
 
 <h1 align="center">
-  Continuando a aplicação
+  Testes e regras de negócio
 
   <br>
 
@@ -22,115 +22,76 @@
 </p>
 
 ### Objetivos do módulo:
-- Entender o Docker;
-- Aprender sobre a criação de containers;
-- Inserir a aplicação no Docker;
-- Executar a aplicação e o banco de dados no Docker;
-- Entender alguns comandos do Docker;
-- Incrementar a documentação da API;
-- Entender o processo de autenticação e criptografia de senhas.
+- Entender testes e quais os seus tipos;
+- Entender e aplicar o TDD (Test Driven Development/Desenvolvimento Dirigido por Testes);
+- Aprender e implementar as regras de negócio;
+- Analisar os requisitos da aplicação.
 
-### Documentação de instalação do Docker:
-Acesse o [link](https://bit.ly/3FDHsh1) para instalação e configuração da ferramenta. Para instalação nativa do Docker no WSL 2 consulte este [tutorial](https://bit.ly/3FFG9xK).
+### Conhecendo os tipos de testes
+- Tipos de testes:
+  - Testes unitários:
+    - São testes realizados em "pedaços"/unidades da aplicação;
+    - Testes realizados nos serviços/funcionalidades/regras de negócio;
+    - Testes de casos de sucesso e casos de erros;
+    - Não é testado o acesso a APIs externas;
+    - Garantem que a lógica do negócio está bem definida.
+  - Testes de integração:
+    - São testes realizados para verificar a aplicação inteira;
+    - Verificação do fluxo completo da aplicação;
+    - Verificação dos fluxos externos da aplicação (conexão com o banco de dados, acesso a APIs externas, envio de e-mails e etc.).
+- TDD:
+  - Metodologia usada para criação de testes;
+  - Iniciar criando os testes, para só depois implementar as funcionalidades em si.
+- Vantagens do uso de testes:
+  - Apontar as mudanças das regras de negócio através dos testes criados;
+  - Minimizar o "caos" oriundo dos erros no estágio de produção;
+  - Auxiliar no entendimento das implementações realizadas aplicação.
 
-### O que é o Docker?
-- Uma ferramenta para criação de containers;
-- Container: ambiente isolado;
-- Imagens: instruções para criação de um container;
-- O que "roda" localmente "roda" em produção;
-- Um único sistema operacional que compartilha recursos da máquina host.
+### Criando o primeiro teste:
+Documentação do [Jest](https://jestjs.io/pt-BR/docs/getting-started).
 
-### Comandos do Docker:
-1. Docker:
-   - Listar todas as imagens:
-     > docker images -a
-   - Remover imagem pelo id:
-     > docker rmi id
-   - Remover todas as imagens:
-     > docker rmi $(docker images -q)
-   - Listar todos os containers:
-     > docker ps -a
-   - Listar todos os containers ativos:
-     > docker ps
-   - Iniciar um container:
-     > docker start id | name
-   - Parar um container:
-     > docker stop id | name
-   - Remover um container:
-     > docker rm id | name
-   - Visualizar os logs da aplicação:
-     > docker logs id | name
-   - Observar os logs da aplicação durante a execução:
-     > docker logs id | name -f
-   - Acessar um container:
-     > docker exec -it id | name /bin/bash
-   - Finalizar o acesso a um container:
-     > Ctrl + D
+### Requisitos da aplicação:
+- Definições:
+  - Requisitos Funcionais (RF): são os requisitos que refletem sobre as funcionalidades da aplicação. Por exemplo, “deve ser possível um usuário pode criar o cadastro de categorias”.
+  - Requisitos Não Funcionais (RNF):  são requisitos que não refletem necessariamente as regras de negócio e/ou funcionalidades do sistema. Por exemplo, “o banco de dados adotado para este projeto é o PostgreSQL”.
+  - Regras de Negócio (RN): estão relacionadas ao detalhamento dos RF. Por exemplo, “não deve se possível cadastrar uma categoria com um nome já existente”.
 
-2. Docker-compose:
-   - Criar e iniciar um container:
-     > docker-compose up
-   - Parar um container:
-     > Ctrl + C
-   - Iniciar um container (background):
-     > docker-compose start | up -d
-   - Parar um container (background):
-     > docker-compose stop
-   - Parar todos os containers (background):
-     > docker stop $(docker ps -a -q)
-   - Remover um container:
-     > docker-compose down
-   - Remover todos os containers:
-     > docker rm $(docker ps -a -q)
-   - Forçar a recriação dos containers (background):
-     > docker-compose up --force-recreate -d
-
-### Conhecendo as formas de usar banco de dados:
-- Driver: [node-postgres](https://node-postgres.com/);
-- Query builder: [Knex.js](https://knexjs.org/);
-- ORM (mapeamento objeto-relacional):
-  - [Sequelize](https://sequelize.org/);
-  - [TypeORM](https://typeorm.io/#/).
-
-### Aprendendo o conceito de migrations:
-- Uma forma de versionar o schema da aplicação;
-- Trabalha com a manipulação do banco de dados:
-  - Criação, alteração e remoção.
-- Controla as alterações do banco de dados juntamente com o versionamento da aplicação;
-- Permite o compartilhamento das alterações realizadas.
-
-### Criando migration de categoria:
-- Criar uma migration:
-  > yarn typeorm migration:create -n model-name
-- Aplicar uma migration no banco de dados:
-  > yarn typeorm migration:run
-- Remover uma migration do banco de dados:
-  > yarn typeorm migration:revert
-
-### Entendendo autenticação com JWT (JSON Web Token):
-- São os tokens que garantem que um usuário esteja autenticado na aplicação;
-- Garantem determinadas permissões dentro do sistema para usuários específicos;
-- Estruturas que compõem um token:
-  - Header:
-    ```{JSON}
-    {
-      "alg": "HS256",
-      "typ": "JWT"
-    }
-    ```
-  - Payload:
-    ```{JSON}
-    {
-      "sub": "1234567890",
-      "name": "Logan",
-      "iat": 1516239022
-    }
-    ```
-  - Verify signature:
-    ```
-    HMACSHA256(
-    base64UrlEncode(header) + "." +
-    base64UrlEncode(payload),
-    your-256-bit-secret
-    )
-    ```
+- Descrição dos requisitos da aplicação:
+  - Cadastro de um carro:
+    - RF:
+      - Deve ser possível cadastrar um novo carro.
+    - RN:
+      - Não deve ser possível cadastrar um carro com uma placa já existente;
+      - O carro deve ser cadastrado, por padrão, como disponível;
+      - O usuário responsável pelo cadastro de um carro deve ser um administrador.
+  - Listagem de carros:
+    - RF:
+      - Deve ser possível listar todos os carros disponíveis para aluguel;
+      - Dever ser possível listar todos os carros disponíveis pelo nome da categoria;
+      - Dever ser possível listar todos os carros disponíveis pelo nome da marca;
+      - Dever ser possível listar todos os carros disponíveis pelo nome do carro.
+    - RN:
+      - O usuário não precisa estar autenticado no sistema para listar os carros disponíveis.
+  - Cadastro de especificações no carro:
+    - RF:
+      - Deve ser possível cadastrar uma especificação para um carro.
+    - RN:
+      - Não deve ser possível cadastrar uma especificação para um carro que não está cadastrado;
+      - Não deve ser possível cadastrar uma especificação já existente para o mesmo carro;
+      - O usuário responsável pelo cadastro de uma especificação deve ser um administrador.
+  - Cadastro de imagens do carro:
+    - RF:
+      - Deve ser possível cadastrar a imagem do carro.
+    - RNF:
+      - Utilizar o Multer para o upload dos arquivos.
+    - RN:
+      - O usuário deve poder cadastrar mais de uma imagem para o mesmo carro;
+      - O usuário responsável pelo cadastro deve ser um administrador.
+  - Aluguel de carro:
+    - RF:
+      - Deve ser possível cadastrar um aluguel.
+    - RN:
+      - O aluguel dever ter duração mínima de 24h;
+      - Não deve ser possível cadastrar um novo aluguel, caso já exista um aluguel aberto para o mesmo usuário;
+      - Não deve ser possível cadastrar um novo aluguel, caso já exista um aluguel aberto para o mesmo carro;
+      - O usuário deve estar logado na aplicação.
