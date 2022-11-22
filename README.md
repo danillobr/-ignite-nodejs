@@ -42,7 +42,7 @@
 - [Desafio 2: modelagem do banco de dados](https://github.com/danillobr/ignite-desafio2-modelagem-banco-de-dados )
 
 ### Chapter IV
-- [Testes e regras de negócio]: <> (05-testes-regras-negocio)
+- [Testes e regras de negócio](05-testes-regras-negocio)
 - [Desafio 1: testes unitários]: <> (https://github.com/danillobr/ignite-desafio1-testes-unitarios)
 - [Desafio 2: testes de integração]: <> (https://github.com/danillobr/ignite-desafio2-testes-integracao)
 
