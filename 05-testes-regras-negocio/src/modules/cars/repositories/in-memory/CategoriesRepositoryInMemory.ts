@@ -1,6 +1,6 @@
 import { Connection } from "typeorm";
 
-import { Category } from "../../entities/Category";
+import { Category } from "../../infra/typeorm/entities/Category";
 import {
   ICategoriesRepository,
   ICreateCategoryDTO,
