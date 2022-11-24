@@ -1,6 +1,5 @@
-import { Connection } from "typeorm";
+import { Category } from "@modules/cars/infra/typeorm/entities/Category";
 
-import { Category } from "../../infra/typeorm/entities/Category";
 import {
   ICategoriesRepository,
   ICreateCategoryDTO,
