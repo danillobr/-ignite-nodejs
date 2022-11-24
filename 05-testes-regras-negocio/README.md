@@ -62,6 +62,7 @@ Documentação do [Jest](https://jestjs.io/pt-BR/docs/getting-started).
       - Deve ser possível cadastrar um novo carro.
     - RN:
       - Não deve ser possível cadastrar um carro com uma placa já existente;
+      - Não deve ser possível alterar a placa de um carro já cadastrado;
       - O carro deve ser cadastrado, por padrão, como disponível;
       - O usuário responsável pelo cadastro de um carro deve ser um administrador.
   - Listagem de carros:
