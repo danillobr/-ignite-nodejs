@@ -61,8 +61,6 @@ describe("Create Car", () => {
       category_id: "Category",
     });
 
-    console.log(car);
-
     expect(car.available === true);
   });
 });
