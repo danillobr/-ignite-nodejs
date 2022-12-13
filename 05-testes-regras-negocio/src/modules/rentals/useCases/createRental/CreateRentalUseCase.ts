@@ -1,5 +1,4 @@
-import dayjs from "dayjs";
-import utc from "dayjs/plugin/utc";
+
 
 import { Rental } from "@modules/rentals/infra/typeorm/entities/Rental";
 import { IRentalsRepository } from "@modules/rentals/repositories/IRentalsRepository";
@@ -46,7 +45,7 @@ class CreateRentalUseCase {
 
     const dateNow = dayjs().utc().local().format();
 
-    const compare = dayjs(expectedReturnDateFormat).diff(dateNow, "hours");
+    const compare = 
 
     if (compare < minimumHour) {
       throw new AppError("Invalid return time");
