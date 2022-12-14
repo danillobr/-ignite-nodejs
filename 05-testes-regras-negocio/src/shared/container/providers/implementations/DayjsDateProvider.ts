@@ -3,11 +3,23 @@ import utc from "dayjs/plugin/utc";
 
 import { IDateProvider } from "../DateProvider/IDateProvider";
 
-class DayjsDateProvider implements IDateProvider{
-  compare(start_date: Date, end_date: Date): number {
-    return dayjs(end_date).diff(start_date, "hours");
+dayjs.extend(utc);
+
+class DayjsDateProvider implements IDateProvider {
+  compareInHours(start_date: Date, end_date: Date): number {
+    const end_date_utc = this.convertToUTC(end_date);
+    const start_date_utc = this.convertToUTC(start_date);
+
+    return dayjs(end_date_utc).diff(start_date_utc, "hours");
   }
 
-} 
+  convertToUTC(data: Date): string {
+    return dayjs(data).utc().local().format();
+  }
 
-export {DayjsDateProvider}
+  dateNow(): Date {
+    return dayjs().toDate();
+  }
+}
+
+export { DayjsDateProvider };

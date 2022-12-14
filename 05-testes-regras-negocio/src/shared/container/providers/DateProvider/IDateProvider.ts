@@ -1,5 +1,7 @@
-interface IDateProvider{
-  compare(start_date: Date, end_date: Date): number;
+interface IDateProvider {
+  compareInHours(start_date: Date, end_date: Date): number;
+  convertToUTC(data: Date): string;
+  dateNow(): Date;
 }
 
-export{IDateProvider}
+export { IDateProvider };
