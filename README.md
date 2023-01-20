@@ -43,11 +43,11 @@
 
 ### Chapter IV
 - [Testes e regras de negócio](05-testes-regras-negocio)
-- [Desafio 1: testes unitários]: <> (https://github.com/danillobr/ignite-desafio1-testes-unitarios)
-- [Desafio 2: testes de integração]: <> (https://github.com/danillobr/ignite-desafio2-testes-integracao)
+- [Desafio 1: testes unitários](https://github.com/danillobr/ignite-desafio1-testes-unitarios)
+- [Desafio 2: testes de integração](https://github.com/danillobr/ignite-desafio2-testes-integracao)
 
 ### Chapter V
-- [Trabalhando com Refresh Token e e-mail]: <> (06-trabalhando-refresh-token-email/)
+- [Trabalhando com Refresh Token e e-mail](06-trabalhando-refresh-token-email/)
 
 
 [comment]: <> (This is a comment, it will not be included)
